@@ -74,17 +74,9 @@ public class Conta {
 	}
 	
 	public void visualizarlancamentos() {
-		System.out.println("Receita");
-		this.lancamentos.stream()
-		.filter(lancamento -> lancamento.getTipoLancamento().equals(TipoLancamento.RECEITA))
-		.forEach(lancamento -> System.out.println(lancamento.toString()));
-		
-		System.out.println("Gastos");
-		this.lancamentos.stream()
-		.filter(lancamento -> lancamento.getTipoLancamento().equals(TipoLancamento.GASTO))
-		.forEach(lancamento -> System.out.println(lancamento.toString()));
+		this.lancamentos.stream().forEach(lancamento -> System.out.println(lancamento.toString()));
 	}
-
+	
 	@Override
 	public String toString() {
 		return   id + ") conta " + tipo.toString().toLowerCase() + " " + nome + " numero " + numero;

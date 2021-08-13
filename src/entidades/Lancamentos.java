@@ -45,12 +45,11 @@ public class Lancamentos {
 
 	@Override
 	public String toString() {
-		
-
+	
 		SimpleDateFormat DateFor = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String stringDate = DateFor.format(data);
 
-		return stringDate + " - "+ descricao + "  R$" + valor + " | " + categoria ;
+		return "Data do Lançamento: " + stringDate + "| Descrição: "+ descricao + " | valor: R$" + valor + " | Categoria: " + categoria ;
 	}
 
 
