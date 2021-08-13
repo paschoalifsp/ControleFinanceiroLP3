@@ -31,7 +31,7 @@ public class Principal {
 		int idLancamento = 0;
 		int opcao = 0;
 
-		Usuario usuario1 = new Usuario(1, "Patricia", "p.santospaschoal@gmail.com", "123456");
+		Usuario usuario1 = new Usuario(1, "Prof. Johnata", "johnata@email.com", "123456");
 
 		mn.exibirBanner(usuario1);
 
@@ -54,7 +54,7 @@ public class Principal {
 				{
 					System.out.println("Nome da conta");
 					String nomeConta = sc.nextLine();
-					
+					sc.next();
 					System.out.println("Numero da conta");
 					String numeroConta = sc.nextLine();
 
@@ -98,6 +98,7 @@ public class Principal {
 				try {
 					System.out.println("Descrição");
 					String descricaoLancamento = sc.nextLine();
+					sc.next();
 
 					System.out.println("Valor");
 					double valor = sc.nextDouble();
